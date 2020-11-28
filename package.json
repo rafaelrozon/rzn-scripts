@@ -1,0 +1,68 @@
+{
+    "name": "rzn-scripts",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/rafaelrozon/rzn-scripts.git",
+    "author": "Rafael Rozon <rafaelrozon.developer@gmail.com>",
+    "license": "MIT",
+    "bin": {
+        "rzn-scripts": "./src/index.js"
+    },
+    "files": [
+        "config",
+        "scripts"
+    ],
+    "scripts": {
+        "test": "jest",
+        "cm": "cz",
+        "lint": "eslint . --ext .ts --ext .tsx --ext .js --ext .jsx",
+        "format": "prettier-eslint --write $PWD/**/*.ts",
+        "format:check": "prettier --check $PWD/**/*.ts",
+        "prepublish": "pinst --disable",
+        "postpublish": "pinst --enable",
+        "postinstall": "husky install"
+    },
+    "engines": {
+        "node": ">=12.18.3",
+        "yarn": ">=1.22"
+    },
+    "dependencies": {
+        "commander": "^6.2.0",
+        "fs-extra": "^9.0.1",
+        "json": "^10.0.0",
+        "shelljs": "^0.8.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.9",
+        "@babel/preset-env": "^7.12.7",
+        "@babel/preset-typescript": "^7.12.7",
+        "@types/jest": "^26.0.16",
+        "@types/react-test-renderer": "^17.0.0",
+        "@typescript-eslint/eslint-plugin": "^4.9.0",
+        "@typescript-eslint/parser": "^4.9.0",
+        "babel-jest": "^26.6.3",
+        "better-npm-run": "^0.1.1",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "^7.14.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-import-resolver-custom-alias": "^1.2.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.21.5",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "format-package": "^6.1.0",
+        "husky": "^5.0.4",
+        "jest": "^26.6.3",
+        "pinst": "^2.1.1",
+        "prettier": "^2.2.1",
+        "prettier-eslint-cli": "^5.0.0",
+        "ts-jest": "^26.4.4",
+        "typescript": "^4.1.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
