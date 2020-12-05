@@ -59,14 +59,21 @@ Commands:
 
 Supported configuration for:
 
--   ESLint
--   editorconfig
--   Jest with support for Typescript
--   Commitizen
--   NVM setup for 12.18.3 NodeJS version
--   Prettier
+-   [ESLint](https://eslint.org/)
+    -   [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+    -   Typescript support
+    -   Prettier
+    -   errors are off. I don't need formatting errors to distract me while coding. Before commiting the code, everything is formatted automatically.
+-   [EditorConfig](https://editorconfig.org/)
+-   [Jest](https://jestjs.io/) with support for Typescript
+-   [Commitizen](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly)
+-   [NVM](https://github.com/nvm-sh/nvm) setup for 12.18.3 Node version
+-   [Prettier](https://prettier.io/)
 -   Git hooks
--   format-package
+    -   run lint before commit
+    -   run tests before push
+    -   run Commitizen on commit
+-   [format-package](https://www.npmjs.com/package/format-package)
 
 ## Inspiration
 
@@ -76,6 +83,7 @@ This was inspired by [kcd-scripts](https://github.com/kentcdodds/kcd-scripts)
 
 -   [ ] evaluate if configs should be converted to presets
 -   [ ] publish to npm
--   [ ] lock yarn version ?
+-   [x] lock yarn version ?
 -   [x] update README with documentation output by commander
 -   [ ] check existence of .env file before running any commands
+-   [ ] check [spotify/web-scripts](https://github.com/spotify/web-scripts)

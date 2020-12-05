@@ -20,7 +20,7 @@
         "format:check": "prettier --check $PWD/**/*.ts",
         "prepublish": "pinst --disable",
         "postpublish": "pinst --enable",
-        "postinstall": "husky install"
+        "_postinstall": "husky install"
     },
     "engines": {
         "node": ">=12.18.3",

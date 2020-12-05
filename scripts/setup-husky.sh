@@ -6,7 +6,7 @@ yarn add -D husky@next
 
 yarn husky install;
 
-npx husky add pre-commit "yarn lint";
+npx husky add pre-commit "yarn format && yarn lint";
 
 npx husky add pre-push "yarn test";
 
