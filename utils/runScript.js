@@ -12,7 +12,7 @@ function runScript(scriptFile) {
             console.log('runScript/stderr: ', stderr);
         }
 
-        console.log('runScript/stdout: ', stdout);
+        // console.log('runScript/stdout: ', stdout);
     });
 }
 

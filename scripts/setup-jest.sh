@@ -8,6 +8,6 @@ babel-jest \
 @babel/preset-env \
 @babel/preset-typescript;
 
-npx json -I -f package.json -e 'this.scripts.test="jest"';
+npx json -I -f package.json -e 'this.scripts.test="jest --passWithNoTests"';
 
 echo "✅ Jest is ready!"
