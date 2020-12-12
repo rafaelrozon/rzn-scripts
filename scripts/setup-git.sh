@@ -2,7 +2,7 @@
 
 echo "Setting up Git..."
 
-set -v -o allexport;
+set -o allexport;
 source ~/.rzn-scripts/.env;
 set +o allexport;
 
