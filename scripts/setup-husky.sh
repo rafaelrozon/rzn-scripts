@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Setting up Git hooks..."
+echo "Setting up Husky"
 
 yarn husky install;
 
@@ -12,4 +12,4 @@ npx husky add .husky/prepare-commit-msg 'exec < /dev/tty && node_modules/.bin/cz
 
 npx json -I -f package.json -e 'this.scripts.postinstall="husky install"';
 
-echo "✅ Git hooks are ready!"
+echo "✅ Husky is ready!"

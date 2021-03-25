@@ -17,7 +17,8 @@ setupCommand.command('git').description('Setup git user name and email').action(
 setupCommand
     .command('devDependencies')
     .description('Install basic packages for development')
-    .action(commands.devDependencies);
+    .action(commands.devDependencies)
+    .arguments("W");
 
 setupCommand
     .command('eslint')
